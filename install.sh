@@ -37,7 +37,7 @@ make
 
 setStatus "Downloading Nexmon_CSI"
 cd $NEXDIR/patches/bcm43455c0/7_45_189/
-git clone https://github.com/zeroby0/nexmon_csi.git
+git clone https://github.com/seemoo-lab/nexmon_csi.git
 
 setStatus "Building and installing Nexmon_CSI"
 cd nexmon_csi
