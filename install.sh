@@ -41,7 +41,6 @@ git clone https://github.com/seemoo-lab/nexmon_csi.git
 
 setStatus "Building and installing Nexmon_CSI"
 cd nexmon_csi
-git checkout pi-5.4.51
 make install-firmware
 
 setStatus "Installing makecsiparams"
@@ -56,7 +55,7 @@ make install
 
 setStatus "Setting up Persistance"
 cd $NEXDIR/patches/bcm43455c0/7_45_189/nexmon_csi/
-cd brcmfmac_5.4.y-nexmon
+cd brcmfmac_5.10.y-nexmon
 mv $(modinfo brcmfmac -n) ./brcmfmac.ko.orig
 cp ./brcmfmac.ko $(modinfo brcmfmac -n)
 depmod -a
